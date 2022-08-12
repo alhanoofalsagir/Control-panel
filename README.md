@@ -61,3 +61,13 @@ In the interface, the gif and image are used to make the current state of the ro
 |:---------:|:-------------------------------------:|:--------:|:---:|
 |    id     | This id used to determine which tobot |  integer | yes |
 |   action  |     Used to store the last action     |  string  | no  |
+
+## Files description :open_file_folder: :
+○ moves.php and run.php: Used to store data in the specified table. moves.php to store move and run state, and run.php to store start and stop operation. <br />
+○ runInfo.php: Used to return a json file to the javascript file with information about the whether the robot is already run or not. <br />
+○ response.php: Used to give information about the current robot (php page to share data with the hardware). <br />
+○ index.html: Contains the main page interface. <br />
+○ index.css: Used to improve the interface. <br />
+○ index.js: This file is responsible for converting the language of the main page (arabic/english). Moreover, it is responsible for taking the response from the runInfo.php file in order to change the necessary parts of the main page. Furthermore, it responsible for transferring data to the php files. <br />
+
+
