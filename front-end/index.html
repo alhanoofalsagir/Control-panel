@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Robot Control Panel</title>
+</head>
+<body>
+
+    <div id="lan">
+        <button id="arabic" class="language hidden">عربي</button>|<button id="english" class="language">English</button> 
+    </div>
+
+    <div id="container">
+        
+        <p id="title">Robot Controller</p>
+        <div id="up">
+            <button id="forward" class="button" onclick="submitMove('forward');">forward</button>
+        </div>
+        <div id="center">
+            <button id="left" class="button" onclick="submitMove('left');">left</button>
+            <img id="image" data-num="0" src="/phpinvisualStudioCode/robot-control-panel/image/stop.gif" alt="Robot">
+            <button id="right" class="button" onclick="submitMove('right');">right</button>
+        </div>
+        <div id="bottom">
+            <button id="backward" class="button" onclick="submitMove('backward');">backward</button>
+        </div>
+        <div id="run">
+            <button id="start-stop" class="button" title="start" onclick="submitRun();">start</button>
+        </div>
+    </div>
+
+    <script src="/phpinvisualStudioCode/robot-control-panel/front-end/index.js"></script>
+</body>
+</html>
